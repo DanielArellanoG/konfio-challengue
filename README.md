@@ -227,3 +227,8 @@ O11y pillars for Request flow?
 Access logs, http status code, request size anomalies
 We may use derived metrics, logs and traces with correlation via payload fields (e.g. trace_id, request_id, applicationId).
 External dependency metrics: synthetic metrics?? Timeout rate, Retry count, Circuit breaker open/closed from custom CloudWatch metrics via app logs.
+Logs intrumentalization: log analyzer scripts, aggregated metrics
+
+Circuit breakers deep dive
+
+Reliability, SLO, SLI
