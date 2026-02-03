@@ -91,7 +91,7 @@ Investigación inicial: ¿Qué datos revisarías primero y en qué orden?
 Formulación de hipótesis: ¿Qué posibles causas considerarías?
 Estrategia de mitigación: ¿Qué acciones priorizarías para reducir impacto?
 Comunicación: ¿Cómo mantendrías informados a los stakeholders?
-1. Análisis de Causa Raíz
+2. Análisis de Causa Raíz
 Desarrollá un análisis profundo:
 Causa raíz principal: Identifica y explica la causa fundamental.
 Factores contribuyentes: ¿Qué elementos del sistema permitieron que este

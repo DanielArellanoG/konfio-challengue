@@ -3,7 +3,7 @@ resource "aws_cloudwatch_dashboard" "this" {
 
   dashboard_body = jsonencode({
     widgets = compact([
-      # Traffic
+################# Traffic
       local.use_alb ? {
         type = "metric"
         properties = {
@@ -38,7 +38,7 @@ resource "aws_cloudwatch_dashboard" "this" {
             ]
         }
       } : null,
-      # Error rate
+################# Error rate
       local.use_alb ? {
         type = "metric"
         properties = {
@@ -105,7 +105,7 @@ resource "aws_cloudwatch_dashboard" "this" {
             ]
         }
       } : null,
-      # Compute Latency
+################# Compute Latency
       local.use_alb ? {
         type = "metric"
         properties = {
@@ -122,7 +122,7 @@ resource "aws_cloudwatch_dashboard" "this" {
             period = 60
         }
       } : null,
-      # Latency vs IntegrationLatency to determine slowness on APIGW itself or downstream services
+################# DB Latency vs IntegrationLatency to determine slowness on APIGW itself or downstream services
       local.use_apigw ? {
         type = "metric"
         properties = {
@@ -159,7 +159,7 @@ resource "aws_cloudwatch_dashboard" "this" {
             ]
         }
       },
-      # DB Latency
+################# DB Latency
       {
         type = "metric"
         properties = {
@@ -183,7 +183,7 @@ resource "aws_cloudwatch_dashboard" "this" {
             ]
         }
       },
-      # Compute saturation  
+################# Compute saturation  
       {
         type = "metric"
         properties = {
@@ -206,7 +206,7 @@ resource "aws_cloudwatch_dashboard" "this" {
             period = 60
         }
       },
-      # DB Saturation  
+################# DB Saturation  
       {
         type = "metric"
         properties = {
